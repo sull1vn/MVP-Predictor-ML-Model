@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1>bofa</h1>
+
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('predict')}}" method="POST">
+        <input type="text" name="PYARDS" placeholder="PYARDS">
+
+        <input type="text" name="TD" placeholder="TD">
+
+        <input type="text" name="INT" placeholder="INT">
+
+        <input type="text" name="CMP%" placeholder="CMP%">
+
+        <input type="text" name="RYARD" placeholder="RYARD">
+
+        <input type="text" name="RTD" placeholder="RTD">
+
+        <input type="text" name="RYA" placeholder="RYA">
+
+        <input type="text" name="REC" placeholder="REC">
+
+        <input type="text" name="Y/A" placeholder="Y/A">
+
+        <input type="text" name="YEAR" placeholder="YEAR">
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+</form>
+
+{{ prediction_text }}
+
+
+
+        
+
+{% endblock %}
