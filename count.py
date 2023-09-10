@@ -5,7 +5,7 @@ import pandas as pd
 # Load the serialized model
 model = joblib.load('mvp_model.pkl')
 
-dataset = '/Users/sullivanmotley/Desktop/ml_dataset/shuffled_data.csv'
+dataset = 'redacted'
 
 # Load your test data (replace with your own data loading process)
 test_data = pd.read_csv(dataset)
